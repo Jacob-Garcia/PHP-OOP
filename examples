@@ -77,3 +77,42 @@ class Band {
             "{$this->lastName}";
             }
 }
+
+ class Song {
+   public $openingRiff;
+   public $chorus;
+   public $solo;
+            function __construct($openingRiff, $chorus, $solo) {
+            $this->openingRiff = $openingRiff;
+            $this->chorus = $chorus;
+            $this->solo = $solo;
+            }
+
+            function get openingRiff(){
+            return "{$this->openingRiff}" .
+            }
+ }
+
+  class Guitar {
+    public $strings;
+    public $frets;
+    piblic $body;
+    public $neck;
+    public $headstock;
+            function __construct($strings, $frets, $body, $neck, $headstock) {
+            $this->strings = $strings;
+            $this->frets = $frets;
+            $this->body = $body;
+            $this->neck = $neck;
+            $this->headstock = $headstock
+            }
+
+            function get strings(){
+            return "{$this->strings}" .
+            }
+  }
+
+  EXAMPLE 2
+
+  $band = new Band("Cannibal", "Corpse", "Death Metal");
+  print "$band: {$band->getName()}\n"
