@@ -1,0 +1,59 @@
+EXAMPLE 1
+
+class Music {
+	//class body
+}
+class Laptop {
+	//class body
+}
+class Record {
+	//class body
+}
+
+EXAMPLE 2
+
+$genre1 = new Genre();
+$genre2 = new Genre();
+
+$band1 = new Band();
+$band2 = new Band();
+
+$song1 = new Song();
+$song2 = new Song();
+
+EXAMPLE 3
+
+class GWAR {
+	public $frontman = "Oderus";
+    public $album = "Scumdogs of the Universe";
+}
+class Iron Maiden {
+	public $frontman = "Bruce";
+	public $album = "Powerslave";
+}
+class Misfits {
+	public $frontman = "Danzig";
+	public $album = "Static Age";
+}
+
+$band1 = new Band();
+print $band1->name;
+// default
+
+$genre1 = new Genre();
+print $genre1->name;
+// default
+
+$song1 = new Song();
+print $song1->name;
+// default
+
+public function firstMethod($something, $else) {
+	//things
+}
+public function secondMethod($a, $b) {
+	//things
+}
+public function thirdMethod($c, $d) {
+	//things
+}
