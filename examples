@@ -57,3 +57,23 @@ public function secondMethod($a, $b) {
 public function thirdMethod($c, $d) {
 	//things
 }
+
+LECTURE 2, EXAMPLE 1
+
+class Band {
+	public $vocals;
+	public $drummer;
+	public $guitar;
+	public $bass;
+	        function __construct($title, $vocals, $drummer, $guitar, $bass) {
+	        $this->leadVocals = $vocals;
+	        $this->drummer = $drummer;
+	        $this->guitar = $guitar;
+	        $this->bass = $bass;
+	        }
+
+            function get leadVocals() {
+            return "{$this->leadVocals}" .
+            "{$this->lastName}";
+            }
+}
