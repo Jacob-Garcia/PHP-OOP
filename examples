@@ -116,3 +116,4 @@ class Band {
 
   $band = new Band("Cannibal", "Corpse", "Death Metal");
   print "$band: {$band->getName()}\n"
+  
