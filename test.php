@@ -21,7 +21,7 @@ echo $me->greet1();
 echo $me->greet2();
 
 
-//Example 2 //
+// Example 2 //
 class Song {
 	public $intro;
 	public $chorus;
@@ -43,6 +43,32 @@ class Song {
 	}
 } 
 $me = new Song('intro', 'chorus', 'solo');
+print $me->thing1();
+print $me->thing2();
+print $me->thing3();
+
+// Example 3 //
+class Art {
+	public $background;
+	public $color;
+	public $foreground;
+
+          public function __construct($background, $color, $foreground) {
+          	$this->background = $background;
+          	$this->color = $color;
+          	$this->foreground = $foreground;
+          } 
+    public function thing1() {
+    	return "The" . " $this->background" . " is somewhat essential for a drawing." . "\n";
+    }
+    public function thing2() {
+    	return "The" . " $this->color" . " is also an important factor to consider." . "\n";
+    }
+    public function thing3() {
+    	return "The" . " $this->foreground" . " is the most detailed piece of it." . "\n";
+    }
+}
+$me = new Art('background', 'color', 'foreground');
 print $me->thing1();
 print $me->thing2();
 print $me->thing3();
